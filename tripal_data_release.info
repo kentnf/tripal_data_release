@@ -1,0 +1,8 @@
+name = Tripal Data Release
+description = A module for data release policy page
+core = 7.x
+version = 7.x-0.1-dev
+project = tripal_data_release
+package = Tripal Extensions
+configure = admin/tripal/extension/tripal_data_release
+
