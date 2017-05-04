@@ -13,11 +13,20 @@ require_once "tripal_data_release.inc";
  */
 function tripal_data_release_menu() {
 
-  $items['tripal/datarelease'] = array(
+  $items['tripal/datarelease/cmaxima'] = array(
     'title' => 'Cucurbita maxima Genome Data Release Policy',
     'description' => 'Cucurbita maxima Genome Data Release Policy.',
     'page callback' => 'drupal_get_form',
-    'page arguments' => array('tripal_data_release_policy_form'),
+    'page arguments' => array('tripal_data_release_policy_cma_form'),
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  $items['tripal/datarelease/cmoschata'] = array(
+    'title' => 'Cucurbita moschata Genome Data Release Policy',
+    'description' => 'Cucurbita moschata Genome Data Release Policy.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('tripal_data_release_policy_cmo_form'),
     'access arguments' => array('access content'),
     'type' => MENU_NORMAL_ITEM,
   );
