@@ -41,7 +41,7 @@ function tripal_data_release_policy_cma_form_validate($form, $form_state) {
 
 function tripal_data_release_policy_cma_form_submit($form, $form_state) {
   if ($form_state['values']['agree'] == 'Y') {
-    drupal_goto('ftp://www.icugi.org/pub/genome/Cucurbita_maxima/');
+    drupal_goto('ftp://www.cucurbitgenomics.org/pub/genome/Cucurbita_maxima/');
   } else {
     drupal_goto('');
   }
@@ -88,7 +88,7 @@ function tripal_data_release_policy_cmo_form_validate($form, $form_state) {
 
 function tripal_data_release_policy_cmo_form_submit($form, $form_state) {
   if ($form_state['values']['agree'] == 'Y') {
-    drupal_goto('ftp://www.icugi.org/pub/genome/Cucurbita_moschata/');
+    drupal_goto('ftp://www.cucurbitgenomics.org/pub/genome/Cucurbita_moschata/');
   } else {
     drupal_goto('');
   }
